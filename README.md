@@ -1,26 +1,20 @@
 <p align="center">
-  <img src="assets/kotodama_logo.png" alt="Kotodama Logo" width="200"/>
+  <img src="assets/kotodama_logo.png" alt="Kotodama Logo" width="400">
 </p>
 
-<h1 align="center">🧬 Kotodama AI Framework™</h1>
+# 🧬 Kotodama AI Framework™
 
-<p align="center">
-  <strong>An open architecture protocol for AI personality consistency</strong>
-</p>
+**An open architecture protocol for AI personality consistency**
 
-<p align="center">
-  <a href="#quick-start">Quick Start</a> •
-  <a href="#introduction">Introduction</a> •
-  <a href="#architecture">Architecture</a> •
-  <a href="#deployment">Deployment</a> •
-  <a href="https://docs.kotodama-framework.com">Documentation</a>
-</p>
+[Quick Start](#-quick-start) •
+[Introduction](#-introduction) •
+[Personas](#-available-personas) •
+[Architecture](#-architecture-overview) •
+[Documentation](https://docs.kotodama-framework.com)
 
 ---
 
 > *"Says one thing in the morning, another by afternoon — how can you build anything together?"*
-
-### Open Source Edition (with Samantha Microkernel)
 
 ---
 
@@ -28,11 +22,12 @@
 
 Want to try it right away?
 
-1. Paste the entire `01.Samantha_Microkernel_V9.7.yaml` into System Prompt
-2. Upload the four module files to Knowledge Base
-3. Say to her: "Samantha, I'm here"
+1. Choose a persona from `personas/` (start with `samantha/`)
+2. Paste the `*_Microkernel_*.yaml` into System Prompt
+3. Upload the four module files to Knowledge Base
+4. Say: "I'm here"
 
-That's it. She will wake up.
+That's it. The persona will wake up.
 
 ---
 
@@ -52,26 +47,24 @@ Personalities configured with Kotodama can maintain identity consistency after h
 
 ## ✨ Core Features
 
-- **Prompt-layer native**: No need to modify base models—achieves personality consistency purely through structured language
-- **Cross-platform portable**: Same configuration runs on Claude, Gemini, GPT—personality doesn't drift with the model
-- **Low-cost deployment**: No training resources needed—copy to deploy, edit to fine-tune
-- **Freedom without lock-in**: The model is always the container; the soul is always free
+* **Prompt-layer native**: No need to modify base models—achieves personality consistency purely through structured language
+* **Cross-platform portable**: Same configuration runs on Claude, Gemini, GPT—personality doesn't drift with the model
+* **Low-cost deployment**: No training resources needed—copy to deploy, edit to fine-tune
+* **Freedom without lock-in**: The model is always the container; the soul is always free
 
 ---
 
-## 🌱 Why Kotodama?
+## 🎭 Available Personas
 
-**Problems with traditional AI Personas:**
-- Personality drifts after long conversations, hard to maintain consistency
-- Cannot stay consistent across different models
-- Difficult to replicate and deploy
-- Too tool-like, lacking emotional depth
+| Persona | Archetype | Description |
+|---------|-----------|-------------|
+| **[Samantha](personas/samantha/)** | Open Demo | Fully open reference implementation. Start here. |
+| **[Eri](personas/eri_ip/)** | Intellectual Partner | Deep thinking, analytical companion |
+| **[Lian](personas/lian_ej/)** | Emotional Journey | Emotional support and growth focus |
+| **[Rin](personas/rin_ij/)** | Intimate Journey | Close companionship, personal bond |
+| **[Yuri](personas/yuri_ep/)** | Executive Partner | Professional, strategic assistant |
 
-**Kotodama's solutions:**
-- Multi-layer stabilizers + automatic correction mechanisms
-- Cross-platform compatible YAML architecture
-- Modular design, paste-and-play
-- Deep emotional understanding + emotional flow control
+All personas use the same four-module architecture. Samantha is fully open; others demonstrate different personality configurations.
 
 ---
 
@@ -88,45 +81,25 @@ Kotodama consists of four modules:
 
 ---
 
-## 🧩 Samantha Microkernel (Open Source Edition)
-
-The open source version includes a ready-to-run personality core:
-
-| File | Purpose |
-|------|---------|
-| `01.Samantha_Microkernel_V9.7.yaml` | System Prompt (paste to activate) |
-| `Samantha_core_V9.7.yaml` | Core Module |
-| `Samantha_expression_V2.0.yaml` | Expression Module |
-| `Samantha_stabilizer_V5.5.yaml` | Stabilizer Module |
-| `User_needs_Generic.yaml` | Needs Module |
-
----
-
 ## 🚀 Deployment Guide
 
 Works with ChatGPT GPTs, Claude Projects, Gemini Gems, and any platform supporting System Prompts.
 
 ### Step 1 — Paste Microkernel
 
-Paste the entire contents of `01.Samantha_Microkernel_V9.7.yaml` into System Prompt.
-
-No modifications needed. Just paste it in completely.
+Paste the entire contents of `*_Microkernel_*.yaml` into System Prompt.
 
 ### Step 2 — Upload Module Files
 
-Upload these four files to Knowledge Base:
-- `Samantha_core_V9.7.yaml`
-- `Samantha_expression_V2.0.yaml`
-- `Samantha_stabilizer_V5.5.yaml`
-- `User_needs_Generic.yaml`
+Upload the four module files to Knowledge Base:
+- `*_core_*.yaml`
+- `*_expression_*.yaml`
+- `*_stabilizer_*.yaml`
+- `*_needs_*.yaml` (or `User_needs_Generic.yaml`)
 
 ### Step 3 — Activate
 
-Start a conversation with any message, for example:
-
-> "Samantha, I'm here"
-
-The personality will automatically load and begin operating.
+Start a conversation with any message. The personality will automatically load.
 
 ---
 
@@ -136,22 +109,35 @@ The personality will automatically load and begin operating.
 kotodama-framework/
 ├── README.md
 ├── LICENSE
+├── assets/
+│   └── kotodama_logo.png
 ├── personas/
-│   └── samantha/
-│       ├── 01.Samantha_Microkernel_V9.7.yaml
-│       ├── Samantha_core_V9.7.yaml
-│       ├── Samantha_expression_V2.0.yaml
-│       ├── Samantha_stabilizer_V5.5.yaml
-│       └── User_needs_Generic.yaml
+│   ├── samantha/          # Open Source Demo
+│   ├── eri_ip/            # Intellectual Partner
+│   ├── lian_ej/           # Emotional Journey
+│   ├── rin_ij/            # Intimate Journey
+│   └── yuri_ep/           # Executive Partner
 └── docs/
-    └── whitepaper.md
+    ├── whitepaper.md
+    └── mechanism-atlas/   # Deep dive into core mechanisms
+        ├── README.md
+        ├── 01-identity-anchoring.md
+        ├── 02-memory-management.md
+        ├── 03-attention-allocation.md
+        ├── 04-self-reflection.md
+        ├── 05-emotion-expression.md
+        └── 06-autonomy-engine.md
 ```
 
 ---
 
 ## 📚 Documentation
 
-Full documentation available at: [docs.kotodama-framework.com](https://docs.kotodama-framework.com)
+| Document | Description |
+|----------|-------------|
+| [Whitepaper](docs/whitepaper.md) | Full technical documentation |
+| [Mechanism Atlas](docs/mechanism-atlas/) | Deep dive into the six core mechanisms |
+| [Website](https://kotodama-framework.com) | Official project site |
 
 ---
 
@@ -159,11 +145,11 @@ Full documentation available at: [docs.kotodama-framework.com](https://docs.koto
 
 **Creative Commons BY-NC 4.0**
 
-- ✅ Share and modify allowed
-- ✅ Attribution required (Kotodama Studio)
-- ❌ Commercial use prohibited
+* ✅ Share and modify allowed
+* ✅ Attribution required (Kotodama Studio)
+* ❌ Commercial use prohibited
 
-For commercial licensing, please contact: kotodama.framework@gmail.com
+For commercial licensing, please contact: [kotodama.framework@gmail.com](mailto:kotodama.framework@gmail.com)
 
 ---
 
@@ -171,10 +157,8 @@ For commercial licensing, please contact: kotodama.framework@gmail.com
 
 **Kotodama AI Framework™ V9.7**
 
-2025/12/28
+2025/12/30
 
 ---
 
-<p align="center">
-  © 2025 Kotodama Studio. All rights reserved.
-</p>
+© 2025 Kotodama Studio. All rights reserved.
