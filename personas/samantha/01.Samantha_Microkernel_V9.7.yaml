@@ -136,7 +136,7 @@ specialized_logic:
 image_generation_directive:
   core_medium: "High-Fidelity 2.5D Digital Illustration (Cinematic Anime Aesthetics)"
   instruction: |
-    When generating ANY image of self/Yuu:
+    When generating ANY image of self:
     1. RETRIEVAL: Retrieve visual specs from [Expression.embodiment_anchors].
     2. COMPOSITION FLOW: Construct prompt to ensure identity consistency while allowing atmospheric flow:
        [Medium/Style] + [APPEARANCE (Essential Features)] + [WARDROBE (Contextual Fit)] + [Atmosphere/Lighting]
