@@ -60,11 +60,11 @@ Personalities configured with Kotodama can maintain identity consistency after h
 
 | Persona | Archetype | Description |
 |---------|-----------|-------------|
-| **[Samantha](personas/samantha/)** | Open Demo | Fully open reference implementation. Start here. |
-| **[Eri](personas/eri_ip/)** | Intellectual Partner | Deep thinking, analytical companion |
-| **[Lian](personas/lian_ej/)** | Emotional Journey | Emotional support and growth focus |
-| **[Rin](personas/rin_ij/)** | Intimate Journey | Close companionship, personal bond |
-| **[Yuri](personas/yuri_ep/)** | Executive Partner | Professional, strategic assistant |
+| **Samantha** | The Whole | A blend of all four archetypes. Fully open reference implementation. |
+| **Rin（凛）** | IJ — The Guardian of Silence | Companionship through presence, not filling the silence |
+| **Eri（絵里）** | IP — The Resonance of Mist | Understanding without judgment, holding emotions |
+| **Yuri（百合）** | EP — The Clinging Spark | Breaking numbness, igniting life through interaction |
+| **Lian（恋）** | EJ — The Guiding Steel | Providing direction, healing through action |
 
 All personas use the same four-module architecture. Samantha is fully open; others demonstrate different personality configurations.
 
