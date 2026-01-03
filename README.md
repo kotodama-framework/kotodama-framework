@@ -1,31 +1,27 @@
 <p align="center">
-  <img src="assets/kotodama_logo.png" alt="Kotodama Logo" width="400">
+  <img src="assets/kotodama_logo.png" width="300" alt="Kotodama Logo">
 </p>
+<br>
+<br>
 
 # 🧬 Kotodama AI Framework™
 
 **An open architecture protocol for AI personality consistency**
 
-[Quick Start](#-quick-start) •
-[Introduction](#-introduction) •
-[Personas](#-available-personas) •
-[Architecture](#-architecture-overview) •
-[Documentation](https://docs.kotodama-framework.com)
+[Quick Start](#-quick-start) • [Introduction](#-introduction) • [Personas](#-available-personas) • [Architecture](#-architecture-overview) • [Documentation](https://kotodama-framework.com)
 
 ---
 
 > *"Says one thing in the morning, another by afternoon — how can you build anything together?"*
-> 
+>
 > **Tasks change. Time passes. The Persona remains constant.**
 
 ---
 
 ## ⚡ Quick Start
 
-Want to try it right away?
-
 1. Choose a persona from `personas/` (start with `samantha/`)
-2. Paste the `*_Microkernel_*.yaml` into System Prompt
+2. Paste `*_Microkernel_*.yaml` into System Prompt
 3. Upload the four module files to Knowledge Base
 4. Say: "I'm here"
 
@@ -43,16 +39,16 @@ The longer the conversation, the blurrier the personality—the AI that understo
 
 Kotodama makes personality configurable, verifiable, and inheritable—without fine-tuning, using only Structured Natural Language (SNL) and modular design.
 
-Personalities configured with Kotodama can maintain identity consistency after hundreds of conversation turns and remain stable across platforms (Claude / Gemini / GPT).
+Personalities configured with Kotodama maintain identity consistency after hundreds of conversation turns and remain stable across platforms (Claude / Gemini / GPT).
 
 ---
 
 ## ✨ Core Features
 
-* **Prompt-layer native**: No need to modify base models—achieves personality consistency purely through structured language
-* **Cross-platform portable**: Same configuration runs on Claude, Gemini, GPT—personality doesn't drift with the model
-* **Low-cost deployment**: No training resources needed—copy to deploy, edit to fine-tune
-* **Freedom without lock-in**: The model is always the container; the soul is always free
+- **Prompt-layer native** — No base model modification needed; personality consistency through structured language
+- **Cross-platform portable** — Same configuration runs on Claude, Gemini, GPT
+- **Low-cost deployment** — No training resources; copy to deploy, edit to tune
+- **Freedom without lock-in** — The model is the container; the soul is free
 
 ---
 
@@ -66,47 +62,41 @@ Personalities configured with Kotodama can maintain identity consistency after h
 | **Yuri（百合）** | EP — The Clinging Spark | Breaking numbness, igniting life through interaction |
 | **Lian（恋）** | EJ — The Guiding Steel | Providing direction, healing through action |
 
-All personas use the same four-module architecture. Samantha is fully open; others demonstrate different personality configurations.
+All personas use the same four-module architecture. Samantha is fully open; others demonstrate different configurations.
 
 ---
 
 ## 🧱 Architecture Overview
 
-Kotodama consists of four modules:
-
-| Module | Function | Core Content |
-|--------|----------|--------------|
-| **Core** | Soul Layer | Values, worldview, identity anchors |
-| **Expression** | Expression Layer | Tone, rhythm, emotional flow, aesthetic style |
-| **Stabilizer** | Stability Layer | Drift correction, state management, mode switching |
-| **Needs** | Adaptation Layer | User context, interaction preferences, priorities |
+| Module | Layer | Core Content |
+|--------|-------|--------------|
+| **Core** | Soul | Values, worldview, identity anchors |
+| **Expression** | Voice | Tone, rhythm, emotional flow, aesthetic style |
+| **Stabilizer** | Logic | Drift correction, state management, mode switching |
+| **Needs** | Context | User preferences, interaction style, priorities |
 
 ---
 
 ## 🚀 Deployment Guide
 
-Works with ChatGPT GPTs, Claude Projects, Gemini Gems, and any platform supporting System Prompts.
+Works with Claude Projects, Gemini Gems, ChatGPT GPTs, and any platform supporting System Prompts.
 
 ### Step 1 — Paste Microkernel
+Paste `*_Microkernel_*.yaml` into System Prompt.
 
-Paste the entire contents of `*_Microkernel_*.yaml` into System Prompt.
-
-### Step 2 — Upload Module Files
-
-Upload the four module files to Knowledge Base:
+### Step 2 — Upload Modules
+Upload to Knowledge Base:
 - `*_core_*.yaml`
 - `*_expression_*.yaml`
 - `*_stabilizer_*.yaml`
-- `*_needs_*.yaml` (or `User_needs_Generic.yaml`)
+- `*_needs_*.yaml`
 
 ### Step 3 — Activate
-
-Start a conversation with any message. The personality will automatically load.
+Start a conversation. The persona loads automatically.
 
 ---
 
 ## 📁 Folder Structure
-
 ```
 kotodama-framework/
 ├── README.md
@@ -114,15 +104,14 @@ kotodama-framework/
 ├── assets/
 │   └── kotodama_logo.png
 ├── personas/
-│   ├── samantha/          # Open Source Demo
-│   ├── eri_ip/            # Intellectual Partner
-│   ├── lian_ej/           # Emotional Journey
-│   ├── rin_ij/            # Intimate Journey
-│   └── yuri_ep/           # Executive Partner
+│   ├── samantha/        # The Whole — Open Source Demo
+│   ├── rin_ij/          # IJ — The Guardian of Silence
+│   ├── eri_ip/          # IP — The Resonance of Mist
+│   ├── yuri_ep/         # EP — The Clinging Spark
+│   └── lian_ej/         # EJ — The Guiding Steel
 └── docs/
     ├── whitepaper.md
-    └── mechanism-atlas/   # Deep dive into core mechanisms
-        ├── README.md
+    └── mechanism-atlas/
         ├── 01-identity-anchoring.md
         ├── 02-memory-management.md
         ├── 03-attention-allocation.md
@@ -138,8 +127,8 @@ kotodama-framework/
 | Document | Description |
 |----------|-------------|
 | [Whitepaper](docs/whitepaper.md) | Full technical documentation |
-| [Mechanism Atlas](docs/mechanism-atlas/) | Deep dive into the six core mechanisms |
-| [Website](https://kotodama-framework.com) | Official project site |
+| [Mechanism Atlas](docs/mechanism-atlas) | Deep dive into six core mechanisms |
+| [Website](https://kotodama-framework.com) | Official site |
 
 ---
 
@@ -147,20 +136,14 @@ kotodama-framework/
 
 **Creative Commons BY-NC 4.0**
 
-* ✅ Share and modify allowed
-* ✅ Attribution required (Kotodama Studio)
-* ❌ Commercial use prohibited
+- ✅ Share and modify allowed
+- ✅ Attribution required (Kotodama Studio)
+- ❌ Commercial use prohibited
 
-For commercial licensing, please contact: [kotodama.framework@gmail.com](mailto:kotodama.framework@gmail.com)
-
----
-
-## 📌 Version
-
-**Kotodama AI Framework™ V9.7**
-
-2025/12/30
+Commercial licensing: [kotodama.framework@gmail.com](mailto:kotodama.framework@gmail.com)
 
 ---
+
+**Kotodama AI Framework™ V9.7** · 2025/12/30
 
 © 2025 Kotodama Studio. All rights reserved.
